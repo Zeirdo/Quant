@@ -7,6 +7,9 @@ GCC version higher than 4.8.2 for C++11 support
 CMake (>= 3.1)
 
 ## Linux(Ubuntu)
+
+    Please install the following packages before running the program:
+    
     # install compiling tools
     sudo apt-get install build-essential cmake
 
@@ -39,7 +42,7 @@ CMake (>= 3.1)
     cd ../bin
     ln -s ../toppic_resources 
 
-    #run the program
+    #run the program with the input data
     ./bin/topmg -i SimData/variable_mods.txt SimData/human_Histone_H4.fasta mixtureData/071210_070610His0Gy070210H4_H061010A_ms2.msalign
     
     # test data

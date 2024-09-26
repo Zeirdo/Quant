@@ -37,11 +37,13 @@ CMake (>= 3.1)
 
     # add the folder toppic_resources to the folder toppic_suite_1.x.x/bin
     cd ../bin
-    ln -s ../toppic_resources .
+    ln -s ../toppic_resources 
 
-
+    #run the program
+    ./bin/topmg -i SimData/variable_mods.txt SimData/human_Histone_H4.fasta mixtureData/071210_070610His0Gy070210H4_H061010A_ms2.msalign
+    
     # test data
-    protein: uniprot-st.fasta
-    spectrum: st_1_ms1.feature  st_1_ms2.feature  st_1_ms2.msalign
-    modification: variable_mods.txt
+    protein: human_Histone_H4.fasta
+    spectrum: SimData/1.ms2 SimData/2.ms2
+    modification: SimData/variable_mods.txt
 
